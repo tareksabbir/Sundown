@@ -1,10 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans&display=swap');
+@font-face {
+  font-family: neu;
+  src: url(./font/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+  font-family: neu;
+  font-weight: 100;
+  src: url(./font/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+  font-family: neu;
+  font-weight: 200;
+  src: url(./font/NeueHaasDisplayRoman.ttf);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: neu;
 }
 
 html,
@@ -33,18 +48,18 @@ nav {
   gap: 1vw;
 }
 
+/* navbar button animation  starts*/
+
 .nav-links h4 {
-  padding: 10px 20px;
+  padding: 10px 25px;
   border: 1px solid rgba(0, 0, 0, 0.605);
   border-radius: 2rem;
-  font-weight: 400;
+  font-weight: 100;
   color: rgba(0, 0, 0, 0.869);
-  font-size: 17px;
+  font-size: 18px;
   position: relative;
-  transition: all ease 0.5s;
+  transition: all ease 0.6s;
   overflow: hidden;
- 
-
 }
 
 .nav-links h4::after {
@@ -56,9 +71,7 @@ nav {
   left: 0;
   bottom: -100%;
   border-radius: 50%;
-  transition: all ease 0.5s;
-
-
+  transition: all ease 0.6s;
 }
 
 .nav-links h4:hover::after {
@@ -66,13 +79,15 @@ nav {
   border-radius: 0;
 }
 
-.nav-links h4 a{
-    text-decoration: none;
-    color: black;
-    z-index: 9;
-    position: relative;
+.nav-links h4 a {
+  text-decoration: none;
+  color: black;
+  z-index: 9;
+  position: relative;
 }
 
-.nav-links h4:hover a{
-    color: white;
+.nav-links h4:hover a {
+  color: white;
 }
+
+/* navbar button animation end*/
