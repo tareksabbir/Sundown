@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gilroy";
+  font-family: "Inter", sans-serif;
 }
 
 html,
@@ -11,8 +13,66 @@ body {
   width: 100%;
 }
 
-#page1{
-    height: 100vh;
-    width: 100%;
-    background-color: #EFEAE3;
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+}
+
+nav {
+  padding: 2vw 2vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.nav-links h4 {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.605);
+  border-radius: 2rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.869);
+  font-size: 17px;
+  position: relative;
+  transition: all ease 0.5s;
+  overflow: hidden;
+ 
+
+}
+
+.nav-links h4::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+
+
+}
+
+.nav-links h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+.nav-links h4 a{
+    text-decoration: none;
+    color: black;
+    z-index: 9;
+    position: relative;
+}
+
+.nav-links h4:hover a{
+    color: white;
 }
