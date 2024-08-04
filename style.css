@@ -134,7 +134,7 @@ nav {
   top: 72vh;
 }
 #hero-1 {
-    background-color: #fe530a;
+    background-color: #fe670a;
     height: 100%;
     width: 100%;
     border-top-left-radius: 50%;
@@ -222,12 +222,13 @@ nav {
 }
 
 #gola{
-    height: 70px;
-    width: 70px;
+    height: 5vw;
+    width: 5vw;
    background-color: #fe3f0a;
    border-radius: 50%;
    margin: 1vw 2vw;  
    display: inline-block;
+ 
 
 }
 
@@ -239,33 +240,66 @@ nav {
     }
 }
 
-#page2-bottom{
-    min-height: 80vh;
+#page2-bottom {
+    height: 80vh;
     width: 100%;
-    background-color: #efeae3;
+    padding: 4.5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4vw ;
- 
+    position: relative;
+    z-index: 9;
 }
 
-#page2-bottom h1{
-    font-size: 4vw; 
+#page2-bottom h1 {
+    font-size: 4vw;
+    width: 60%;
     line-height: 4vw;
-    width: 60%; 
-}
-#bottom-part2{
-    width: 20%;
 }
 
-#bottom-part2 img{
-    width: 100%;
-    border-radius: 20px;
-    margin-top: 20vw;
+#bottom-part2 {
+    width: 20%;
+
 }
-#bottom-part2 p{
+
+#bottom-part2 img {
+    margin-top: 20vw;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#bottom-part2 p {
     font-weight: 200;
     margin-top: 2vw;
     font-size: 1vw;
 }
+
+#page2 #elements {
+    height: 32vw;
+    width: 32vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+    top: 58%;
+    left: 25%;
+    filter: blur(20px);
+    animation-name: element;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes element {
+    from {
+        filter: blur(20px);
+        transform: translate(10%, -10%) skew(0);
+    }
+
+    to {
+        filter: blur(30px);
+        transform: translate(-10%, 10%) skew(-12deg);
+    }
+}
+
